@@ -44,7 +44,37 @@ so the answer code will be
 
 All of them.
 
-#### Write a for loop that iterates over a range of values from a data type like a string or a slice.
+#### Write a for loop that iterates over a range of values from a `os.Args`
+
+`for _, arg := range os.Args[1:] {`&#x20;
+
+`echo arg`&#x20;
+
+`}`
+
+range, produces two values: index and value.&#x20;
+
+#### blank identifier
+
+the blank identifier, whose name is \_ (that is, an underscore). The blank identifier may be used whenever syntax requires a variable name but prog ram logic does not, for instance, to discard an unwanted loop index when we require only the element value.&#x20;
+
+Most Go programmers would likely use range and \_ to write the echo program as above, since the indexing over os.Args, is implicit, not explicit, and thus easier to get right.
+
+#### Write 4 methods to declare an empty s string
+
+`s := ""`&#x20;
+
+`var s string`&#x20;
+
+`var s = "" // rarely used`
+
+`var s string = "" // It has redundant parts`
+
+In practice, you should generally use one of the first two forms, with explicit initialization to say that the initial value is important and implicit initialization to say that the initial value doesn’t matter
+
+####
+
+
 
 
 

@@ -2,4 +2,4 @@
 
 * [Tutorial](README.md)
   * [Hello, World](tutorial/hello-world.md)
-  * [CommandLine Arguments](tutorial/commandline-arguments.md)
+  * [CommandLine Arguments](tutorial/page-2.md)
