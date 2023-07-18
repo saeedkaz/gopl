@@ -26,19 +26,18 @@ The first element of os.Args, os.Args\[0], is the name of the command its elf; t
 
 The for loop is the only loop statement in Go.
 
-`for initialization; condition; post {`&#x20;
-
-`// zero or more statements`&#x20;
-
-}
+```go
+for initialization; condition; post {
+// zero or more statements
+} 
+```
 
 so the answer code will be
 
-`for i =0; i < 10; i++ {`&#x20;
-
-`echo i`&#x20;
-
-`}`
+<pre class="language-go"><code class="lang-go"><strong>for i =0; i &#x3C; 10; i++ { 
+</strong>echo i 
+}
+</code></pre>
 
 #### Which parts in a loop statement can be ignored?
 
@@ -46,11 +45,11 @@ All of them.
 
 #### Write a for loop that iterates over a range of values from a `os.Args`
 
-`for _, arg := range os.Args[1:] {`&#x20;
-
-`echo arg`&#x20;
-
-`}`
+```go
+for _, arg := range os.Args[1:] {
+echo arg 
+}
+```
 
 range, produces two values: index and value.&#x20;
 
@@ -72,9 +71,12 @@ Most Go programmers would likely use range and \_ to write the echo program as a
 
 In practice, you should generally use one of the first two forms, with explicit initialization to say that the initial value is important and implicit initialization to say that the initial value doesn’t matter
 
-####
+#### Use string package to read `os.Args`
 
-
+```go
+fmt.Println(strings.Join(os.Args[1:], " "))
+fmt.Println(os.Args[1:]) //has [] around it
+```
 
 
 
