@@ -1,7 +1,7 @@
 # Table of contents
 
-* [2. Program Structure](README.md)
-* [template](<README (1).md>)
+* [template](README.md)
+* [2. Program Structure](<README (1).md>)
 
 ## Chapter1
 

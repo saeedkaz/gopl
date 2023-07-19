@@ -1,16 +1,3 @@
-# template
+# 2. Program Structure
 
-## title
-
-
-
-
-
-
-
-#### code
-
-```go
-// Some code
-```
-
+ccc
