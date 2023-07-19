@@ -1,8 +1,15 @@
 # Table of contents
 
-* [Tutorial](README.md)
+* [Page 9](README.md)
+* [Page 10](page-10.md)
+* [Page 3](page-3.md)
+* [Tutorial](<README (1).md>)
   * [Hello, World](tutorial/hello-world.md)
   * [CommandLine Arguments](tutorial/page-2.md)
   * [template](readme/template.md)
   * [1.3](readme/1.3.md)
 * [Page 1](page-1.md)
+* [Page 2](page-2.md)
+* [Page 4](page-4.md)
+* [Page 6](page-6.md)
+* [Page 7](page-7.md)
