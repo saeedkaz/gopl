@@ -14,5 +14,12 @@ cccc
 
 
 ```go
+package main
+fund main() {
+    for i=1; i<10{
+
+    }
+}
+
 // Some code
 ```
