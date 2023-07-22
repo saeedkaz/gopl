@@ -40,12 +40,13 @@ i, j := 0, 1
 
 >**What is pointer? How can define it? How to update it**
 Pointer value is the adress of a variable.
+
 ```go
-x := 1
-p := &x // p, of type *int, points to x
-fmt.Println(*p) // "1"
-*p = 2 // equivalent to x = 2
-fmt.Println(x) // "2"
+    x := 1
+    p := &x // p, of type *int, points to x
+    fmt.Println(*p) // "1"
+    *p = 2 // equivalent to x = 2
+    fmt.Println(x) // "2"
 ```
 
 
@@ -95,13 +96,21 @@ var iable or both are nil.
 
 
 >**Question?**
+
 >**Question?**
+
 >**Question?**
+
 >**Question?**
+
 >**Question?**
+
 >**Question?**
+
 >**Question?**
+
 >**Question?**
+
 >**Question?**
 ## 
 
