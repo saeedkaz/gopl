@@ -112,8 +112,11 @@ Because the most common unnamed variables are of struct types, for which the str
 
 ### 2.3.4. Lifetime of Variables
 
+>**ٌWhat is the lifetime of package-level and local variables?**
+The lifetime of package-level variables is the entire execution of the program.
+The lifetime of local variables is dynamic, until it becomes unreachalbe.
 
->**Question?**
+## 2.4. Assignments
 
 >**Question?**
 
