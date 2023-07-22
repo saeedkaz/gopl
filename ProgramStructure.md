@@ -57,7 +57,7 @@ Pointer value is the adress of a variable.
     var x, y int
     fmt.Println(&x == &x, &x == &y, &x == nil)
 ```
-***
+
 > *Answer*
 
 The zero value for a pointer of any typ e is nil. 
@@ -66,6 +66,7 @@ The test p != nil is true if p points to a variable.
 
 Pointers are comparable; two pointers are equal if and only if they point to the same
 var iable or both are nil.
+
 ```go
 // "true false false"
 ```
@@ -73,6 +74,7 @@ var iable or both are nil.
 
 
 >**Define a function that return the address of a local variable?**
+
 ```go
     var p = f()
     func f() *int {
@@ -81,6 +83,7 @@ var iable or both are nil.
     }
 ```
 >**Define a function that takes the address of a local variable?**
+
 ```go
     func incr(p *int) int {
     *p++ // increments what p points to; does not change p
@@ -93,11 +96,22 @@ var iable or both are nil.
 
 ### 2.3.3. The new Function
 
+>**How can we create a variable by using new function?**
+by using new(T), an unnamed variable type T will be created
 
+```go
+p := new(int) // p, of type *int, points to an unnamed int variable
+fmt.Println(*p) // "0"
+*p = 2 // sets the unnamed int to 2
+fmt.Println(*p) // "2"
+```
 
->**Question?**
+>**Why the new function is relatively rarely used?**
 
->**Question?**
+Because the most common unnamed variables are of struct types, for which the struct literal syntax is more flexible
+
+### 2.3.4. Lifetime of Variables
+
 
 >**Question?**
 
