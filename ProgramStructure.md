@@ -3,10 +3,6 @@
 ## 2.1. Names
 
 >**What is the rules for namning in go?**
-***
----
-—
-
 
 The names in go begin with a letter or underscore and can have many letters, digits & underscores
 ***
@@ -14,7 +10,6 @@ The names in go begin with a letter or underscore and can have many letters, dig
 
 When an entity is defined inside a function it't local but when it's definid in a program it can be seen by all function belong to that package.
 If the first letter is upper case, it is exporterd and it can be seen by other packages as well.
-***
 
 ## 2.2. Declarations
 
@@ -34,13 +29,88 @@ var name type = expression
 
 ### 2.3.1. Short Variable Declarations
 
-ddd
+>**How to defien a varialbe in Short Variable Declarations mode?**
 
+```go
+i  := 0
+i, j := 0, 1
+```
+
+### 2.3.2. Pointers
+
+>**What is pointer? How can define it? How to update it**
+Pointer value is the adress of a variable.
+```go
+x := 1
+p := &x // p, of type *int, points to x
+fmt.Println(*p) // "1"
+*p = 2 // equivalent to x = 2
+fmt.Println(x) // "2"
+```
+
+
+
+>**What is result of this snippet?**
+
+```go
+    var x, y int
+    fmt.Println(&x == &x, &x == &y, &x == nil)
+```
+***
+> *Answer*
+
+The zero value for a pointer of any typ e is nil. 
+
+The test p != nil is true if p points to a variable.
+
+Pointers are comparable; two pointers are equal if and only if they point to the same
+var iable or both are nil.
+```go
+// "true false false"
+```
+
+
+
+>**Define a function that return the address of a local variable?**
+```go
+    var p = f()
+    func f() *int {
+    v := 1
+    return &v
+    }
+```
+>**Define a function that takes the address of a local variable?**
+```go
+    func incr(p *int) int {
+    *p++ // increments what p points to; does not change p
+    return *p
+    }
+    v := 1
+    incr(&v) // side effect: v is now 2
+    fmt.Println(incr(&v)) // "3" (and v is 3)
+```
+
+### 2.3.3. The new Function
+
+
+
+>**Question?**
+>**Question?**
+>**Question?**
+>**Question?**
+>**Question?**
+>**Question?**
+>**Question?**
+>**Question?**
+>**Question?**
 ## 
 
 
 
 #### code
+```go
+// Some code
+```
 
 
 
@@ -51,9 +121,12 @@ fund main() {
 
     }
 }
+```
 
+```go
 // Some code
 ```
+>**Question?**
 
 | Question    | Answer |
 | -------- | ------- |
