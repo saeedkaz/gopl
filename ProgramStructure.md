@@ -118,7 +118,33 @@ The lifetime of local variables is dynamic, until it becomes unreachalbe.
 
 ## 2.4. Assignments
 
->**Question?**
+>**What is assignment? give some examples.**
+A value hold by a variable is updated by an assignment.
+In the simplest form the variable is on the left of = and an experssion on the right.
+```go
+x = 1 // named variable
+*p = true // indirect variable
+person.name = "bob" // struct field
+count[x] = count[x] * scale // array or slice or map element
+```
+
+
+>**Write corresponding assignment operator for following assignments?**
+
+```go
+v = v + 1
+v = v - 1
+count[x] = count[x] * scale
+```
+
+```go
+v++ // v = v + 1 
+v-- // v = v - 1
+count[x]*=scale // count[x] = count[x] * scale
+```
+
+### 2.4.1. Tuple Assignment
+
 
 >**Question?**
 
@@ -128,12 +154,14 @@ The lifetime of local variables is dynamic, until it becomes unreachalbe.
 
 >**Question?**
 
->**Question?**
-## 
+>**Question?*
 
+>**Question?*
+>**Question?*
+>**Question?*
+>**Question?*
+>**Question?*
 
-
-#### code
 ```go
 // Some code
 ```
