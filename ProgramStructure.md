@@ -177,14 +177,13 @@ This is implicit, because it uses the := operator to infer the type and value of
 
 ## 2.5. Type Declarations
 
-
 >**Question?**
->**Question?*
->**Question?*
->**Question?*
->**Question?*
->**Question?*
->**Question?*
+>**Question?**
+>**Question?**
+>**Question?**
+>**Question?**
+>**Question?**
+>**Question?**
 
 ```go
 // Some code
