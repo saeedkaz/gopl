@@ -49,8 +49,6 @@ Pointer value is the adress of a variable.
     fmt.Println(x) // "2"
 ```
 
-
-
 >**What is result of this snippet?**
 
 ```go
@@ -60,7 +58,7 @@ Pointer value is the adress of a variable.
 
 > *Answer*
 
-The zero value for a pointer of any typ e is nil. 
+The zero value for a pointer of any typ e is nil.
 
 The test p != nil is true if p points to a variable.
 
@@ -71,8 +69,6 @@ var iable or both are nil.
 // "true false false"
 ```
 
-
-
 >**Define a function that return the address of a local variable?**
 
 ```go
@@ -82,6 +78,7 @@ var iable or both are nil.
     return &v
     }
 ```
+
 >**Define a function that takes the address of a local variable?**
 
 ```go
@@ -121,6 +118,7 @@ The lifetime of local variables is dynamic, until it becomes unreachalbe.
 >**What is assignment? give some examples.**
 A value hold by a variable is updated by an assignment.
 In the simplest form the variable is on the left of = and an experssion on the right.
+
 ```go
 x = 1 // named variable
 *p = true // indirect variable
@@ -128,13 +126,12 @@ person.name = "bob" // struct field
 count[x] = count[x] * scale // array or slice or map element
 ```
 
-
 >**Write corresponding assignment operator for following assignments?**
 
 ```go
-v = v + 1
-v = v - 1
-count[x] = count[x] * scale
+        v = v + 1
+        v = v - 1
+        count[x] = count[x] * scale
 ```
 
 ```go
@@ -144,18 +141,45 @@ count[x]*=scale // count[x] = count[x] * scale
 ```
 
 ### 2.4.1. Tuple Assignment
+>**What is tuple assignment?**
+
+By using tuple assignment we can assigend several varialbe at once.
+
+```go
+// computing the n-t h Fibonacci number iteratively
+func fib(n int) int {
+x, y := 0, 1
+for i := 0; i < n; i++ {
+x, y = y, x+y
+}
+return x
+}
+```
+
+>**How can we use tuple function when call to a function with multiple results, produce several values?**
+we use as many variable as function has result.
+
+```go
+f, err = os.Open("foo.txt") // function call returns two values
+v, ok = m[key] // map lookup
+v, ok = x.(T) // type assertion
+v, ok = <-ch// channel receive
+_, err = io.Copy(dst, src) // discard byte count
+_, ok = x.(T) // check type but discard result
+```
+
+### 2.4.2. Assignability
+
+>**Is this explicit or implicit?**
+> > > `medals := []string{"gold", "silver", "bronze"}?`
+
+This is implicit, because it uses the := operator to infer the type and value of medals from the slice literal.
+
+## 2.5. Type Declarations
 
 
 >**Question?**
-
->**Question?**
-
->**Question?**
-
->**Question?**
-
 >**Question?*
-
 >**Question?*
 >**Question?*
 >**Question?*
@@ -165,8 +189,6 @@ count[x]*=scale // count[x] = count[x] * scale
 ```go
 // Some code
 ```
-
-
 
 ```go
 package main
@@ -180,6 +202,7 @@ fund main() {
 ```go
 // Some code
 ```
+
 >**Question?**
 
 | Question    | Answer |
