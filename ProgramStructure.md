@@ -141,6 +141,7 @@ count[x]*=scale // count[x] = count[x] * scale
 ```
 
 ### 2.4.1. Tuple Assignment
+
 >**What is tuple assignment?**
 
 By using tuple assignment we can assigend several varialbe at once.
