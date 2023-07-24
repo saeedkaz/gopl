@@ -178,13 +178,26 @@ This is implicit, because it uses the := operator to infer the type and value of
 
 ## 2.5. Type Declarations
 
->**Question?**
->**Question?**
->**Question?**
->**Question?**
->**Question?**
->**Question?**
->**Question?**
+**What is type decleration?**  
+A type declaration defines a new named ty pe that has the same underlying type as an existing type.  
+The named typ e provides a way to sep arate dif ferent and perhaps incompatible uses of the underlying typ e so that they can’t be mixed unintentionally.  
+>`type name underlying-type`
+
+## 2.6. Packages and Files
+
+**Question?**  
+
+**Question?**  
+**Question?**  
+**Question?**  
+**Question?**  
+**Question?**  
+**Question?**  
+**Question?**  
+**Question?**  
+**Question?**  
+
+
 
 ```go
 // Some code
