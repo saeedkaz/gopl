@@ -185,7 +185,23 @@ The named typ e provides a way to sep arate dif ferent and perhaps incompatible 
 
 ## 2.6. Packages and Files
 
-**Question?**  
+**The source code for a package resides in?**
+One or more .go files, usually in a directory whose name ends with the import path;
+
+### 2.6.1. Imports
+
+**Within a Go program, every package is identified by a unique string called waht?**  
+ import path.
+
+### 2.6.2. Package Initialization
+
+**What is the used case fo inti function?**  
+Each variable declared at package level starts life with the value of its initializer expression, if any, but for some variables, like tables of data, an initializer expression may not be the simplest
+way to set its initial value.  
+In that case, the init function mechanism may be simpler.
+
+## 2.7. Scope
+
 
 **Question?**  
 **Question?**  
