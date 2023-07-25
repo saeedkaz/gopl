@@ -202,6 +202,18 @@ In that case, the init function mechanism may be simpler.
 
 ## 2.7. Scope
 
+**What is a syntactic block?**  
+A syntactic block is sequence of statements ecclosed in braces, like function and loop.
+**What is a lixical block?**  
+There is a lexical block  
+for the entire source code, called the universe block;  
+for each package;  
+for each file;  
+for each for, if, and switch statement;  
+for each case in a switch or select statement;  
+and, of course, for each explicit syntactic block.
+
+A declaration’s lexical block determines its scope, which may be large or small.
 
 **Question?**  
 **Question?**  
@@ -210,10 +222,6 @@ In that case, the init function mechanism may be simpler.
 **Question?**  
 **Question?**  
 **Question?**  
-**Question?**  
-**Question?**  
-
-
 
 ```go
 // Some code
