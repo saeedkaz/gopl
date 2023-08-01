@@ -11,8 +11,6 @@ cccc
 
 #### code
 
-
-
 ```go
 package main
 fund main() {
